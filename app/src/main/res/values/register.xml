@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="reg_btn">Register</style>
+    <string name="reg_photo">photo</string>
+    <string name="reg_first_name">First name</string>
+    <string name="reg_first_name_box">first name</string>
+    <string name="reg_last_name">Last name</string>
+    <string name="reg_last_name_box">last name</string>
+    <string name="reg_email_new">Email</string>
+    <string name="reg_email_new_box">email</string>
+    <string name="reg_password_new">Password</string>
+    <string name="reg_password_new_box">password</string>
+    <string name="reg_repassword_new">Re-Enter password</string>
+    <string name="reg_repassword_new_box">re-enter password</string>
+
+</resources>

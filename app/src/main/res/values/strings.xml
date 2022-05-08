@@ -1,0 +1,20 @@
+<resources>
+
+
+    <string name="app_name">Nanasa</string>
+    <string name="home">Home</string>
+    <string name="addRecord">Add record</string>
+    <string name="save">Save</string>
+    <string name="date">Date</string>
+    <string name="addbutton">Add</string>
+    <string name="title">Title</string>
+    <string name="editrecord">Edit Record</string>
+    <string name="panthikamare">Nanasa</string>
+    <string name="menu1">menu</string>
+    <string name="logo1">logo</string>
+    <string name="subject">Subject</string>
+    <string name="learningoutcome">Learning Outcome</string>
+    <string name="donepoints">Done Points</string>
+    <string name="expectedpoints">Expected Point</string>
+
+</resources>

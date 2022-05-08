@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="make_assingment_button">Make Assignment</string>
+    <string name="view_assingment_button">View Assignment</string>
+    <string name="save_icon">save icon</string>
+    <string name="save_text">Save</string>
+    <string name="AssignmentNO_text">Assignment NO</string>
+    <string name="AssignmentNO_hint">Enter Assignment Number</string>
+    <string name="Subject_text">Subject</string>
+    <string name="Subject_hint">Enter Subject</string>
+    <string name="Description_text">Description</string>
+    <string name="Description_hint">Enter Description</string>
+    <string name="upload_text">Upload Assignment</string>
+    <string name="upload_icon">Upload icon</string>
+    <string name="drag_text">Upload Your Assignment Here</string>
+    <string name="mk_date">Dead Line</string>
+    <string name="mk_date_hint">DeadLine(eg:DD/MM/YYYY)</string>
+    <string name="titel">Update Assignment</string>
+    <string name="titel_edit">preview uploaded assingment</string>
+
+
+</resources>

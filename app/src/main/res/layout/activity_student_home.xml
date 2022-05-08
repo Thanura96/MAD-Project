@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/student_drawer_layout"
+    android:background="@drawable/back_cover_03"
+    tools:context=".student_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/student_main_toolbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+
+            >
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:layout_width="match_parent"
+                android:id="@+id/slider"
+                app:auto_cycle="true"
+                app:placeholder="@drawable/background_gry"
+                app:error_image="@drawable/background_gry"
+                app:delay="0"
+                app:period="1500"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:corner_radius="5"
+                android:layout_height="match_parent">
+            </com.denzcoskun.imageslider.ImageSlider>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/stReg"
+                android:background="@drawable/background_stbtn_1"
+                android:text="@string/my_profile_button_student_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:paddingRight="-65dp"
+                android:textStyle="bold"
+                android:onClick="clickMyprofile"
+                />
+
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_stbtn_2"
+                android:onClick="clickViewStudentAssignment"
+                android:text="@string/view_assingment_button_student_home"
+                android:gravity="center_horizontal"
+                android:paddingTop="75dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_stbtn_3"
+                android:text="@string/add_assingment_button_student_home"
+                android:gravity="center_horizontal"
+                android:paddingTop="75dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:onClick="clickMyAssignmentLog"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_stbtn_4"
+                android:text="@string/view_marks_button_student_home"
+                android:gravity="center_horizontal"
+                android:paddingTop="75dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:onClick="clickViewMarkAssignment"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_stbtn_5"
+                android:text="@string/my_note_button_student_home"
+                android:gravity="center_horizontal"
+                android:paddingTop="75dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:onClick="clickMyNote"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/main_student_nav_drower"/>
+
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

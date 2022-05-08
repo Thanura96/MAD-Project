@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_cover_02"
+    tools:context=".preview_assingment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/backwerdmanu"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titel_edit"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/aclonica"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="10dp"
+                   android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <!--table hedding-->
+                    <TableRow
+                        android:background="@drawable/table_row1"
+                        >
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="number"
+                            android:textColor="@color/white"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="subject"
+                            android:textColor="@color/white"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="deadLine"
+                            android:textColor="@color/white"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            />
+
+
+
+
+                    </TableRow>
+
+                    <!--table data-->
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="no"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:textColor="@color/black"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/assignemtNo"
+                            android:background="@drawable/table_row2"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="subject"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/assignmentSubject"
+                            android:background="@drawable/table_row2"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="deadline"
+                            android:padding="10sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/assignemtDeadLine"
+                            android:background="@drawable/table_row2"
+                            />
+
+
+
+                    </TableRow>
+
+                    <!--heding-->
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Descriptions"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:background="@drawable/table_row1"
+                            />
+
+
+                        <!--data-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:hint="description"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/assignemtDescription"
+                            android:background="@drawable/table_row2"
+                            />
+
+                    </TableRow>
+
+
+                    <!--hedding-->
+                    <TableRow
+                        android:background="@drawable/table_row1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="upload date"
+                            android:textColor="@color/white"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="update date"
+                            android:textColor="@color/white"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Preview"
+                            android:textColor="@color/white"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            />
+
+
+                    </TableRow>
+
+                    <!--data-->
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:hint="upload date"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/add_date_time"
+                            android:background="@drawable/table_row2"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:hint="update date"
+                            android:textColor="@color/black"
+                            android:padding="10sp"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/update_date"
+                            android:background="@drawable/table_row2"
+                            />
+
+
+
+                        <ImageButton
+                            android:layout_weight="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:id="@+id/pre_T_btn"
+                            android:src="@drawable/view_icon"
+                            android:background="@drawable/table_row2"
+                            />
+
+
+
+                    </TableRow>
+
+                    <!--hedding-->
+                    <TableRow
+                        android:background="@drawable/table_row1">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Assingment"
+                            android:padding="10sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_weight="4"
+                            android:gravity="center_horizontal" />
+
+                    </TableRow>
+
+
+                    <!--data-->
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_weight="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="320dp"
+                            android:id="@+id/assignmentImage"
+                            android:layout_gravity="center"
+                            android:src="@drawable/upload_assingment_btnicon"
+                            android:background="@drawable/table_row2"/>
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

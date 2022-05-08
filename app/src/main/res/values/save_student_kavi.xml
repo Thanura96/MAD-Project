@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="save_firstname">First Name</string>
+    <string name="save_lastname">Last Name</string>
+    <string name="save_stid">Student ID</string>
+    <string name="save_grade">Grade</string>
+    <string name="save_firsttt">first name</string>
+    <string name="save_lasttt">last name</string>
+    <string name="save_iddd">student id</string>
+    <string name="save_graddd">Grade</string>
+
+</resources>
